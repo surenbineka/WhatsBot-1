@@ -119,6 +119,10 @@ client.on('message_create', async(msg) => {
 
             msg.reply("Pong !!!");
 
+        } else if (msg.body == "!about") { // Ping command
+
+            msg.reply("I'm Wall-E bot 🤖\n\nI Can Automate your Whatsapp\n\nSuren is my Dad\n\n You can Contact him for more information 😊 ");
+
         } else if (msg.body == "!start") { // Start command
             msg.delete(true)
             var startdata = await start.get(await client.info.getBatteryStatus(), client.info.phone)
